@@ -1,0 +1,193 @@
+<html>
+    <head> <title></title> <style>
+.navbar{
+background-color:#000000;
+height:60px;
+width:1500px;
+display:flex;
+justify-content:space-evenly;
+align-items: center;
+}
+.navbar a{
+color:gold;
+font-size: 20px;
+}
+.navbar a:hover {
+  color: #8613c9; /* Optional: Change text color to match the glow */
+  
+  /* Layering multiple shadows builds the glow strength */
+  text-shadow: 
+    0 0 10px #8613c9
+    0 0 20px #8613c9,
+    0 0 30px #8613c9,
+    0 0 40px #8613c9,
+    0 0 50px #8613c9,
+    0 0 60px #8613c9;
+}
+.bn{
+height:45px;
+background-color: white;
+color: gold;
+align-items:center;
+padding-left:15px;
+flex-wrap: wrap;
+border-radius:5px;
+width:60px;
+display: flex;
+}
+ img{
+height: 60px;
+width: 100px;
+display:block;
+}
+h{
+color:#E6C200;
+font-size: 25px;
+justify-content: center;
+display:flex;
+animation-name:slideInRight;
+animation-duration:5s;
+margin-top: 20px;
+font-family:'Cinzel', serif;
+}
+@keyframes fadeIn {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;  
+    }
+}
+@keyframes slideInRight {
+    from{
+        transform: translateX(-100%);
+        opacity:0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes popup {
+    from{
+        transform: translateX(100%);
+        opacity:0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slideintoview {
+    from{
+        transform: translateY(100%);
+        opacity:0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes elegantreveal {
+    from{
+        transform: scale(0.8);
+        opacity:0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+h1{
+        color:#ffd36b;
+        font-size:22px;
+        justify-content: center;
+        align-items:center;
+        display: flex;
+        animation-name:popup;
+        animation-duration:5s;
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-top: 60px;
+    }
+    h2{
+        color: #eec566;
+        align-items: center;
+        justify-content: center;
+         animation-name:elegantreveal;
+        animation-duration:7s;
+    }
+    h3{
+        color:#dfc42c;
+         animation-name:slideintoview;
+        animation-duration:9s;
+        margin-left: 10px;
+    }
+ body{
+        background-color:#0f0f0f;
+        background-size: cover;
+        background-position: center;
+        background-attachment:fixed;
+        height: 100%;
+        margin: 0%;
+        background-repeat: no-repeat;
+    }
+    p{
+        color:#dfc42c;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        margin-top: 50px;
+    }
+</style></head>
+<body>
+<div class="navbar">
+<img src="{{url_for('static',filename='logo.jpeg')}}">
+<div><a href="/home"> Home</a></div>
+<div><a href="/events">Events</a> </div>
+<div><a href="/dining">Dining</a></div>
+<div><a href="/Sovereignty">Sovereignty</a></div>
+<div class="bn"><a href="/reservation">Reservation </a></div>
+        </div>
+ <h> Signature Menu - KING THE LAND </h>
+ <ul>
+<li><h1> North India – Mughal & Rajputana Legacy </h1></li>
+<li><h2>Kohinoor Biryani</h2></li>
+<h3>Awadhi dum biryani, served in royal courts since the 1700s — over 300 years of heritage.</h3>
+<li><h2>Shehenshahi Nihari </h2></li>
+<h3> Slow-braised lamb shanks, first prepared in Mughal kitchens in the 16th century — 400+ years of legacy.</h3>
+<li><h2>Rajputana Laal Maas </h2></li>
+<h3>Fiery lamb curry, a warrior’s feast from Rajput courts since the 1600s — 350 years of tradition.</h3>
+ </ul>
+ <ul>
+    <h1>South India – Coastal Maharajas</h1>
+    <li> <h2>Malabar Lobster Curry </h2></li>
+    <h3> Kerala’s spice coast delicacy, traced back to royal households of the 18th century — 250 years of heritage.</h3>
+    <li><h2>Chettinad Pepper Chicken </h2></li>
+    <h3>Bold Tamil Nadu recipe, preserved in Chettiar families since the 1600s — 350 years of lineage.</h3>
+ </ul>
+<ul>
+    <li><h1> East India – Bengal & Odisha Elegance </h1></li>
+    <li><h2> Shorshe Ilish </h2></li>
+    <h3>Hilsa in mustard sauce, a zamindar delicacy since the 1700s — 300 years of tradition.</h3>
+    <li><h2> Chingri Malai Curry </h2></li>
+    <h3>Tiger prawns in saffron coconut cream, served in aristocratic Bengal households since the 1800s — 200 years of legacy.</h3>
+</ul>
+<ul>
+    <li><h1>West India – Maratha & Gujarati Grandeur</h1></li>
+    <li><h2>Royal Dal Baati Churma</h2></li>
+    <h3>Maratha warrior’s feast, recorded in royal kitchens since the 1700s — 300 years of heritage.</h3>
+    <li><h2>Kesari Basundi</h2></li>
+    <h3>Sweet saffron milk reduction, celebrated in Gujarat’s royal families since the 1800s — 200 years of tradition.</h3>
+</ul>
+<ul>
+    <li><h1>Central India – Nawabi & Tribal Heritage</h1></li>
+    <li><h2>Bhopali Gosht Korma </h2></li>
+    <h3>Nawabi delicacy, cooked in Bhopal palaces since the 19th century — 150 years of lineage.</h3>
+    <li><h2>Mahua Tribal Delicacy </h2></li>
+    <h3>Ancestral recipe using mahua flowers, preserved in tribal communities for over 500 years.</h3>
+</ul>
+<p>Note: At Queens Heritage Restaurant, every dish carries centuries of inheritance. You don’t dine on food—you dine on history.</p>
+</body>
+</html>

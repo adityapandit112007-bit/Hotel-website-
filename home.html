@@ -1,0 +1,119 @@
+<html>
+<head> <title> QUEENS HOTEL </title>
+<style> 
+.navbar{
+background-color: #000000;
+height:60px;
+width:1510px;
+display:flex;
+justify-content:space-evenly;
+align-items: center;
+position:fixed;
+margin-top: 2px;
+}
+.navbar a{
+color:gold;
+font-size: 20px;
+}
+.navbar a:hover{
+    color: #8613c9;
+     text-shadow:
+      0 0 10px #8613c9,
+      0 0 20px #8613c9,
+      0 0 40px #8613c9,
+      0 0 60px #8613c9;
+}
+.bn{
+height:45px;
+background-color: white;
+color: gold;
+align-items:center;
+padding-left:15px;
+flex-wrap: wrap;
+border-radius:5px;
+width:60px;
+display: flex;
+}
+.h1{
+color:rgba(153, 247, 46, 0.938);
+font-size: 30px;
+padding-top:80px;
+padding-left: 360px;
+}
+body{
+background-image:url("{{ url_for('static',filename='hotel.png') }}");
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+display: flex;
+height:100%;
+margin:0px;
+}
+.p{
+font-size:25px;
+color:white;
+margin-left: 170px;
+margin-top: 150px;
+margin-bottom:auto;
+height:400px;
+width:1000px;
+text-align:center;
+justify-content: space-evenly;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+ img{
+height: 60px;
+width: 100px;
+display:block;
+}
+.feature-item{
+padding: 10px;
+border-bottom: 1px solid #eee;
+list-style: none;
+animation-name: FadeIn;
+animation-duration: 0.6s;
+}
+@keyframes FadeIn{
+    from{
+    opacity: 0;
+    transform: translateY(0);
+}
+to{
+opacity:1;
+transform: translateY(1);
+}
+}
+.feature-list{
+  max-width: 800px;
+    margin: 400px auto;
+}
+</style></head>
+<body>
+<header>
+<div class="navbar">
+<img src="{{ url_for('static',filename='logo.jpeg')}}" alt="logo">
+<div><a href="/home"> Home</a></div>
+<div><a href="/events">Events</a> </div>
+<div><a href="/dining">Dining</a></div>
+<div><a href="/Sovereignty">Sovereignty</a></div>
+<div class="bn"><a href="/reservation">Reservation </a></div>
+</div>
+<div class="h1">
+    <h1> Unparalled Opulence Awaits.</h1>
+    </div>
+<div class="p">
+<p> Immerse yourself in a world of refined elegance,where every desire is anticipated and met with impeccable service.
+    our commitment to quality is evident in every detail,from the meticulously designed suites to our award-winning dining
+    experiences. This is more than just a stay; it is your private sanctuary,an escape where luxury is redefined and your
+    comfort is paramount.Discover an experience tailored specifically for the discerning traveler.</p> 
+    <ul class="feature-list">
+<li class="feature-item"> Expansive Grounds & Scenic Views </li>
+ <li class="feature-item"> World-Class Dining Options </li>
+ <li class="feature-item"> Full-Service Luxury Spa </li>
+<li class="feature-item"> Championship Golf Courses</li>
+<li class="feature-item"> On-Site Casino & Entertainment</li>
+<li class="feature-item"> Personalised Concierge Service </li>
+</ul>
+</div>
+</body>
+</html>
