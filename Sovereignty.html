@@ -16,7 +16,6 @@ font-family:"cinzel", serif;
 }
 .bn{
 height:45px;
-background-color: white;
 color: gold;
 align-items:center;
 padding-left:15px;
@@ -38,6 +37,8 @@ h1{
     align-items: center;
     justify-content: center;
     padding-top: 100px;
+    animation-name:fadeIn;
+    animation-duration:4s;
 }
 h2{
     font-size: 27px;
@@ -46,6 +47,8 @@ h2{
     align-items: center;
     justify-content: center;
     border-top: 15px;
+    animation-name:popup;
+    animation-duration:5s;
 }
 p{
     font-size: 25px;
@@ -54,6 +57,36 @@ p{
     align-items: center;
     justify-content: center;
     padding-top: 20px;
+    animation-name:elegantreveal;
+    animation-duration:6s;
+}
+        @keyframes fadeIn {
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;  
+    }
+}
+@keyframes popup {
+    from{
+        transform: translateX(100%);
+        opacity:0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes elegantreveal {
+    from{
+        transform: scale(0.8);
+        opacity:0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 body{
  align-items: center;
