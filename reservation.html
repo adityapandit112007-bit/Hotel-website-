@@ -208,6 +208,31 @@
             </div>
         </div>
        </div>
+           <!-- Document selection -->
+       <div class="space-y-1.5">
+        <label for="select document"
+        class="block text-xs text-gold-500 tracking-wide"> Select Document </label>
+        <div class="relative rounded-xl bg-darkPlate-input border border-neutral-700/80 input-focus-gold transition-all duration-200">
+            <select id="select document" name="select document" placeholder="image" required class="w-full bg-transparent
+             px-4x py-3 text-sm text-neutral-100 focus:outline-none rounded-xl appearance-none cursor-pointer pr-10">
+            <option value=""
+            disabled selected 
+            class="bg-darkPlate-card 
+            text-neutral-500">
+        Choose Document</option>
+        <option value="Passport"
+        class="bg-darkPlate-card text-neutral-200">Passport</option>
+        <option value="AADHAR/ID Card"
+        class="bg-darkPlate-card text-neutral-200">AADHAR/ID Card</option>
+        <option value="visa"
+        class="bg-darkPlate-card text-neutral-200">Visa</option>
+            </select>
+            <div class="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none text-neutral-200">
+                <i 
+                data -lucide="chevron-down" class="w-4 h-4"></i>
+            </div>
+        </div>
+       </div>
        <!-- Submit Button -->
         <div class="pt-3">
             <button
