@@ -34,6 +34,24 @@ def rooms():
               }
             ]
         })
+    @app.route("/document")
+def documents():
+    return jsonify({
+        "documents":[
+            {
+                "id":1,
+                "name":"Passport"
+                },
+            {
+                "id":2,
+                "name":"Aadhar/ID card"
+                },
+            {
+                "id":3,
+                "name":"Visa"
+                }
+            ]
+        })
 @app.route("/health")
 def health():
     return jsonify({
